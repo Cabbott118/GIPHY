@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giphy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Giphy API</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Animal GIF Search</h1>
+        <div class="bigBox">
+            <div class="buttonFormArea">
+                <div class="container buttonArea">
+                    <div id="buttonArea">
+
+                    </div>
+                </div>
+
+                <div class="container searchArea">
+                    <form id="input-form">
+                        <input type="text" class="form-control searchBar" id="userInput">
+                        <p>Add an Animal</p>
+                        <input class="btn btn-info" id="addAnimal" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bigGifArea">
+            <div id="gifArea" class="row"></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
