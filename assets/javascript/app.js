@@ -13,7 +13,7 @@ function displayAnimal() {
     //Given API Key
     var key = "NIt8I84MFyG4VY8syrnwRRGpqfftMg2T"
     //Given API Key directly added
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animalChoice + "&api_key=" + key + "&limit=10&rating=R";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalChoice + "&api_key=" + key + "&limit=10&rating=R";
     //URL for Animals w/ my key included (testing purposes)
     // var queryURL = "http://api.giphy.com/v1/gifs/search?q=animals&api_key=NIt8I84MFyG4VY8syrnwRRGpqfftMg2T&limit=10&rating=PG-13";
 
