@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(114, 202, 106);
     color: white;
 }
 
@@ -7,11 +7,14 @@ h1 {
     text-align: center;
 }
 
+h5 {
+    text-align: left;
+}
 .buttonFormArea {
     margin: auto;
     width: 60%;
     padding: 10px;
-    border: 3px solid teal;
+    border: 5px solid green;
 
 }
 
@@ -21,7 +24,7 @@ h1 {
 
 .searchBar {
     margin-top: 50px;
-    width: 25%;
+    width: 50%;
 }
 
 #gifArea {
@@ -29,7 +32,12 @@ h1 {
 
 }
 
+.animalGif{
+    border: 5px solid green;
+}
+
 img {
+    align-content: center;
     width: 300px;
     height: auto;
 }
