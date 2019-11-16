@@ -12,32 +12,63 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Caleb's GIPHY</h1>
-        <div class="bigBox">
-            <div class="buttonFormArea">
-                <div class="container buttonArea">
-                    <div id="buttonArea">
+    </div>
+    <div class="container bigBox">
+        <div class="container buttonFormArea">
+            <div class="searchArea">
+                <form id="input-form">
+                    <input type="text" class="form-control searchBar" id="userInput">
+                    <p>Search an Animal</p>
 
+                    <!-- <p>Select a Rating for your GIFs</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            G
+                        </label>
                     </div>
-                </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            PG
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            PG-13
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            R
+                        </label>
+                    </div> -->
+                    <br>
 
-                <div class="container searchArea">
-                    <form id="input-form">
-                        <input type="text" class="form-control searchBar" id="userInput">
-                        <p>Add an Animal</p>
-                        <input class="btn btn-success" id="addAnimal" type="submit" value="Add to List">
-                    </form>
-                </div>
+                    <input class="btn btn-outline-info" id="addAnimal" type="submit" value="Add to List">
+                </form>
             </div>
         </div>
+        <hr class="horRule">
 
-        <div class="container bigGifArea">
-            <!-- Statically set row for dynamically added elements -->
-            <div id="gifArea" class="row"></div>
+
+        <div class="container buttonArea">
+            <div id="buttonArea"></div>
         </div>
 
+
+        <!-- Statically set row for dynamically added elements -->
+        <div id="gifArea" class="row"></div>
     </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
