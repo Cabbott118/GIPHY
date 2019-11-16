@@ -11,9 +11,11 @@ function displayAnimal() {
     var animalChoice = $(this).attr("data-name");
     //Given API Key
     var key = "NIt8I84MFyG4VY8syrnwRRGpqfftMg2T"
+    // var rating = ["g", "pg", "pg-13", "r"];
+
     //Given API Key directly added
     //For future, always change to HTTPS (issues occured when not)
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalChoice + "&api_key=" + key + "&limit=10&rating=R";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalChoice + "&api_key=" + key + "&limit=10&rating=r";
     //URL for Animals w/ my key included (testing purposes)
     // var queryURL = "https://api.giphy.com/v1/gifs/search?q=animals&api_key=NIt8I84MFyG4VY8syrnwRRGpqfftMg2T&limit=10&rating=PG-13";
 
@@ -116,7 +118,7 @@ function addButtons() {
     //Run a for loop to add button classes and attributes, 
     //then append to the page
     for (var i = 0; i < topics.length; i++) {
-        var btn = $('<button class="btn btn-success">');
+        var btn = $('<button class="btn btn-outline-info">');
         btn.addClass("animalBtn");
         btn.attr("id", "animal");
         btn.attr("data-name", topics[i]);
